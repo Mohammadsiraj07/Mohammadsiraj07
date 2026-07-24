@@ -1,0 +1,55 @@
+<svg width="460" height="250" viewBox="0 0 460 250" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+  <stop offset="0%" stop-color="#ff4fa3"/>
+  <stop offset="100%" stop-color="#7b2ff7"/>
+</linearGradient>
+<linearGradient id="statNameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+  <stop offset="0%" stop-color="#ff4fa3"/>
+  <stop offset="100%" stop-color="#9b5de5"/>
+</linearGradient>
+</defs>
+<rect x="0.5" y="0.5" width="459" height="249" rx="16" fill="#150a24" stroke="#ff4fa3" stroke-width="1.2" opacity="0.95">
+  <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+</rect>
+<text x="20" y="30" font-family="'Segoe UI',Arial,sans-serif" font-size="16" font-weight="700" fill="#f5e9ff">GitHub Stats</text>
+<line x1="20" y1="40" x2="440" y2="40" stroke="#ff4fa3" stroke-opacity="0.4"/>
+
+<g>
+  <circle cx="90" cy="145" r="52" fill="none" stroke="#1f0f34" stroke-width="10"/>
+  <circle cx="90" cy="145" r="52" fill="none" stroke="url(#ringGrad)" stroke-width="10"
+    stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="326.7"
+    transform="rotate(-90 90 145)">
+    <animate attributeName="stroke-dashoffset" from="326.7" to="91.5"
+      dur="1.4s" begin="0.2s" fill="freeze" calcMode="spline" keySplines=".25,.1,.25,1" keyTimes="0;1"
+      values="326.7;91.5"/>
+  </circle>
+  <text x="90" y="143" text-anchor="middle" font-family="Consolas,monospace" font-size="22" font-weight="800" fill="url(#statNameGrad)">A+</text>
+  <text x="90" y="161" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#c9a8e0">local rank</text>
+</g>
+
+<g transform="translate(0,78)" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.40s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" additive="sum" values="30,0; 0,0" dur="0.5s" begin="0.40s" fill="freeze"/>
+  <text x="185" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#c9a8e0">Public Repos</text>
+  <text x="395" y="0" text-anchor="end" font-family="Consolas,monospace" font-size="13" font-weight="700" fill="#f5e9ff">18</text>
+</g>
+<g transform="translate(0,112)" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.58s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" additive="sum" values="30,0; 0,0" dur="0.5s" begin="0.58s" fill="freeze"/>
+  <text x="185" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#c9a8e0">Following</text>
+  <text x="395" y="0" text-anchor="end" font-family="Consolas,monospace" font-size="13" font-weight="700" fill="#f5e9ff">5</text>
+</g>
+<g transform="translate(0,146)" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.76s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" additive="sum" values="30,0; 0,0" dur="0.5s" begin="0.76s" fill="freeze"/>
+  <text x="185" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#c9a8e0">Followers</text>
+  <text x="395" y="0" text-anchor="end" font-family="Consolas,monospace" font-size="13" font-weight="700" fill="#f5e9ff">0</text>
+</g>
+<g transform="translate(0,180)" opacity="0">
+  <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.94s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" additive="sum" values="30,0; 0,0" dur="0.5s" begin="0.94s" fill="freeze"/>
+  <text x="185" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="13" fill="#c9a8e0">Joined</text>
+  <text x="395" y="0" text-anchor="end" font-family="Consolas,monospace" font-size="13" font-weight="700" fill="#f5e9ff">Dec 2024</text>
+</g>
+</svg>
